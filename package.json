@@ -1,0 +1,24 @@
+{
+  "name": "artemis-maps",
+  "version": "1.0.0",
+  "description": "Artemis Maps is an open-source mapping library that integrates seamlessly with React and Angular applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YusufMalu001/Artemis-Maps.git"
+  },
+  "author": "Yusuf Malu Bhai Wala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YusufMalu001/Artemis-Maps/issues"
+  },
+  "homepage": "https://github.com/YusufMalu001/Artemis-Maps#readme",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
