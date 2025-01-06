@@ -9,7 +9,7 @@ const RealTimeTracker = () => {
 
   useEffect(() => {
     // Initialize the map only once
-    if (!mapInstance.current && mapRef.current) {
+    if (mapInstance.current && mapRef.current) {
       // Initialize the map if it's not already created
       mapInstance.current = L.map(mapRef.current).setView([location.lat, location.lng], 13);
 
