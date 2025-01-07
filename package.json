@@ -1,24 +1,51 @@
 {
   "name": "artemis-maps",
-  "version": "1.0.0",
-  "description": "Artemis Maps is an open-source mapping library that integrates seamlessly with React and Angular applications.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YusufMalu001/Artemis-Maps.git"
-  },
-  "author": "Yusuf Malu Bhai Wala",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YusufMalu001/Artemis-Maps/issues"
-  },
-  "homepage": "https://github.com/YusufMalu001/Artemis-Maps#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@mapbox/mapbox-gl-directions": "^4.3.1",
+    "assert": "^2.1.0",
+    "cra-template": "1.2.0",
+    "fs": "^0.0.1-security",
     "leaflet": "^1.9.4",
+    "leaflet-minimap": "^3.6.1",
+    "leaflet-react": "^3.0.5",
+    "mapbox-gl": "^3.9.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
+    "react-places-autocomplete": "^7.3.0",
+    "react-scripts": "^5.0.1",
+    "util": "^0.12.5",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "path-browserify": "^1.0.1",
+    "react-app-rewired": "^2.2.1"
   }
 }
