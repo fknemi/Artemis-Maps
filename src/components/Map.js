@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import { useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
-import Directions from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
-
-
+import Directions from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions"; // Temporary Workaround See https://github.com/mapbox/mapbox-gl-directions/issues/157
 
 const Map = () => {
     const { isDarkMode } = useContext(DarkModeContext);
@@ -13,20 +11,19 @@ const Map = () => {
     const point2 = [75.88305, 22.7659];
 
     useEffect(() => {
-        mapboxgl.accessToken =
-            "";
+        mapboxgl.accessToken = "";
 
         const map = new mapboxgl.Map({
             container: "map",
             style: isDarkMode
-            ? "mapbox://styles/mapbox/dark-v10"
-            : "mapbox://styles/mapbox/satellite-streets-v11",
+                ? "mapbox://styles/mapbox/dark-v10"
+                : "mapbox://styles/mapbox/satellite-streets-v11",
             center: point1,
             zoom: 15,
         });
 
-        const nav = new mapboxgl.NavigationControl()
-        map.addControl(nav, 'top-left');
+        const navigationControls = new mapboxgl.NavigationControl();
+        map.addControl(navigationControls, "top-left");
 
         const directionsControl = new Directions({
             accessToken: mapboxgl.accessToken,
