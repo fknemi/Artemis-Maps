@@ -11,7 +11,7 @@ const Map = () => {
     const point2 = [75.88305, 22.7659];
 
     useEffect(() => {
-        mapboxgl.accessToken = "";
+        mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
         const map = new mapboxgl.Map({
             container: "map",
